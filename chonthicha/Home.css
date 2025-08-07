@@ -1,0 +1,66 @@
+
+/* รีเซ็ตค่าเริ่มต้น */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    display: flex;
+    font-family: 'Arial', sans-serif;
+    background-color: #ffdce4; /* ชมพูอ่อน */
+  }
+  
+  /* แถบด้านซ้าย */
+  .sidebar {
+    width: 150px;
+    background-color: #f9b3c1; /* ชมพูเข้ม */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+  }
+  
+  /* ปุ่มเมนู */
+  .menu-btn {
+    display: block;
+    background-color: #ff6f91;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    width: 100px;
+    padding: 40px 0;
+    margin: 30px 0;
+    border-radius: 50px;
+    font-size: 20px;
+    transition: background-color 0.3s;
+  }
+  
+  .menu-btn:hover {
+    background-color: #ff5e81;
+  }
+  
+  /* เนื้อหารูป */
+  .content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+      }
+      
+  
+  .content img {
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  }
+  
